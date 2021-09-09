@@ -1,0 +1,46 @@
+void main() {
+  String Student_Name = "Abdullah";
+  int Total_Marks= 800;
+  int Eng = 70;
+  int Urdu = 75;
+  int Isl = 80;
+  int Phy = 85; 
+  int Chem = 79;
+  int Math = 89;
+  int Pst = 80;
+  int Comp = 70;
+  
+  int Obtained_Marks = Eng+Urdu+Isl+Phy+Chem+Math+Pst+Comp; 
+  print ("${Student_Name} has obtained ${Obtained_Marks} marks out of ${Total_Marks}");
+  
+  double Percentage = Obtained_Marks/Total_Marks*100;
+  print (Percentage);
+  
+  if (Percentage >= 80) {
+    print('${Student_Name} has ${Percentage}% with Grade A+');
+  }
+  
+  else if (Percentage >= 70) {
+    print('${Student_Name} has ${Percentage}% with Grade A');
+  }
+  
+  else if (Percentage >= 60) {
+    print('${Student_Name} has ${Percentage}% with Grade B');
+  }
+  
+  else if (Percentage >= 50) {
+    print('${Student_Name} has ${Percentage}% with Grade C');
+  }
+  
+  else if (Percentage >= 40) {
+    print('${Student_Name} has ${Percentage}% with Grade D');
+  }
+  
+  else if (Percentage < 40) {
+    print('${Student_Name} has ${Percentage}% with Grade F');
+  }
+  
+  
+  
+  
+ }
